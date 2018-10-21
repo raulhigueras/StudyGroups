@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <title>Study Groups</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<style>
+    body{
+      background-image: url("imgs/fondo.jpg");
+      background-size: cover;
+    }
+    .boto{
+      background-color: #374148;
+      border-color: #374148;
+      color: rgb(255, 255, 255);
+      height: 100px;
+      width: 250px;
+      font-size: 30px;
+      border-radius: 10px;
+      margin: 10px auto;
+    }
+    .boto:hover{
+      background-color: #AAAAAA;
+      border-color: #374148;
+      color: rgb(0,0,0);
+      cursor: pointer;
+    }
+    .container{
+      margin-top:250px;
+    }
+
+    #footer{
+      position: absolute;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      color: rgb(255,255,255);
+      font-weight: 100;
+      background-color: rgb(0,0,0, 0.3);
+
+      border-radius: 20px;
+    }
+
+    #footer:hover{
+      background-color: rgb(203,227,233, 0.95);
+      color: rgb(0,0,0);
+       }
+
+    .cancela{
+      color: rgb(255, 255,255);
+      text-decoration: none;
+      }
+
+     .cancela:hover {
+       color: rgb(0,0,0);
+       text-decoration:none;
+       cursor:pointer;
+       }
+    }
+</style>
+</head>
+
+
+<body>
+    <div id="jumbo" class="jumbotron text-center">
+        <h1>S T U D Y // G R O U P S</h1>
+    </div>
+  <!-- responsive equal width cols, can be sm, md, lg, or xl -->
+    <div class="container">
+       <div class="row">
+          <div class="col-sm text-center">
+          <button class="boto" type="button" class="btn btn-dark shadow-lg" align="right" onclick="window.location.href = 'createGroup.html'">Create group</button>
+          </div>
+          <div class="col-sm text-center">
+          <button class="boto" type="button" class="btn btn-dark" onclick="window.location.href = 'getGroups.php'">Join group</button>
+          </div>
+       </div>
+   </div>
+
+ <span id="footer"> <a class="cancela" href="about.html" > About us </a> - <a  class="cancela" href="studygroups.html" > Study//Grups </a>  </span>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+#container{
+  width: 40%;
+  margin: auto;
+  border: solid 1px;
+  padding: 20px;
+}
+.jumbotron{
+  background-color: rgb(203,227,233, 0.95);
+}
+.form-inline{
+  width:25%;
+  margin: auto;
+  margin-bottom: 0px;
+}
+.form-inline > * {
+  margin: auto;
+}
+
+.card{
+  width: 30%;
+  margin-left:2%;
+  margin-bottom: 20px;
+}
+
+.main_title:hover{
+  cursor: pointer;
+}
+
+.main{
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.main p{
+  text-align: justify;
+  text-size:25px
+}

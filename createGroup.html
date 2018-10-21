@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Font awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="functions.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" >
+
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="main_title">S T U D Y // G R O U P S</h1>
+      <h3>Create a new group</h3>
+    </div>
+    <div id="container">
+      <form method="post" action="private/new_group.php">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-book"></i></span>
+          </div>
+          <select class="custom-select" name="subject" required>
+            <option selected value=""> -- Subject -- </option>
+            <option value="CAL">Calculus</option>
+            <option value="PHY">Physics</option>
+            <option value="ALG">Algebra</option>
+            <option value="LMD">Lógica</option>
+          </select>
+        </div>
+        <hr />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+          </div>
+            <input type="date" class="form-control" id="input_date" name="date" required/>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-clock"></i></span>
+          </div>
+            <input type="time" class="form-control" id="input_time" name="startTime" required/>
+        </div>
+        <br />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-map"></i></span>
+          </div>
+            <input type="text" class="form-control" maxlength="5" placeholder="Classroom" id="input_classroom" name="classroom" required/>
+        </div>
+        <br />
+        <button type="button" class="btn btn-secondary" onclick="update()">Check Availability</button> | <span id="aviable_msg"></span>
+        <hr />
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+          </div>
+            <input type="number" class="form-control" placeholder="Max number of assistants" maxlength="2" name="maxLearners" required/>
+        </div>
+        <br />
+        <input type="submit" value="CREATE" class="btn btn-primary"/>
+      </form>
+    </div>
+  </body>
+</html>
